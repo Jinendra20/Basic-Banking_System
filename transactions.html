@@ -29,6 +29,12 @@
     <a href="home.html"><i class="fas fa-home fa-3x"></i></a>
   </div>
 
+  <div class="button">
+
+    <button class="btn btn-outline-info btn-lg my-btn" data-toggle="modal" data-target="#sendMoney">Send Money</button>
+    <a class="btn btn-outline-info btn-lg my-btn" href="history.html" data-toggle="modal" data-target="#transactionHistory">See Transactions</a>
+  </div>
+
   <!-- Modal send money -->
   <div class="modal fade" id="sendMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -55,7 +61,7 @@
             </div>
             <div class="input-group mb-3">
               <div class="input-group-prepend">
-                <span class="input-group-text">Rs</span>
+                <span class="input-group-text">Rs. ₹</span>
               </div>
               <input type="text" id="enterAmount" class="form-control" placeholder=" Enter Amount" aria-label="Amount">
               <div class="input-group-append">
@@ -96,118 +102,106 @@
     </div>
   </div>
 
-  <!-- Customer Table -->
+  <!-- table  -->
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr class="table-danger">
+                        <th scope="col">SR. No.</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">E-mail ID</th>
+                        <th scope="col">Bank Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-light">
+                        <td scope="row">1</td>
+                        <td>Jinendra</td>
+                        <td>Jinendra@gmail.com</td>
+                        <td>
+                            <p id="JinendraBankBalance">23600</p>
+                        </td>
+                    </tr>
+                    <tr class="table-info">
+                        <td scope="row">2</td>
+                        <td>Medha</td>
+                        <td>Medha@gmail.com</td>
+                        <td>
+                            <p id="MedhaBankBalance">37000</p>
+                        </td>
+                    </tr>
+                    <tr class="table-light">
+                        <td scope="row">3</td>
+                        <td>Rajesh</td>
+                        <td>Rajesh@gmail.com</td>
+                        <td>
+                            <p id="RajeshBankBalance">59700</p>
+                        </td>
+                    </tr>
+                    <tr class="table-info">
+                        <td scope="row">4</td>
+                        <td>Yash</td>
+                        <td>Yash@gmail.com</td>
+                        <td>
+                            <p id="YashBankBalance">27000</p>
+                        </td>
+                    </tr>
+                    <tr class="table-light">
+                        <td scope="row">5</td>
+                        <td>Aparna</td>
+                        <td>Aparna@gemail.com</td>
+                        <td>
+                            <p id="AparnaBankBalance">31800</p>
+                        </td>
+                    </tr>
+                    <tr class="table-info">
+                        <td scope="row">6</td>
+                        <td>Asmita</td>
+                        <td>Asmita@gmail.com</td>
+                        <td>
+                            <p id="AsmitaBankBalance">26500</p>
+                        </td>
+                    </tr>
+                    <tr class="table-light">
+                        <td>7</td>
+                        <td>Aman</td>
+                        <td>Aman@gmail.com</td>
+                        <td>
+                            <p id="AmanBankBalance">35900</p>
+                        </td>
+                    </tr>
+                    <tr class="table-info">
+                        <td scope="row">8</td>
+                        <td>Ashish</td>
+                        <td>Ashish@gmail.com</td>
+                        <td>
+                            <p id="AshishBankBalance">32450</p>
+                        </td>
+                    </tr>
+                    <tr class="table-light">
+                        <td scope="row">9</td>
+                        <td>Kedar</td>
+                        <td>Kedar@gmail.com</td>
+                        <td>
+                            <p id="KedarBankBalance">23500</p>
+                        </td>
+                    </tr>
+                    <tr class="table-info">
+                        <td scope="row">10</td>
+                        <td>Omkar</td>
+                        <td>Omkar@gmail.com</td>
+                        <td>
+                            <p id="OmkarBankBalance">35850</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </section>
 
-  <div class="customer-table">
-
-    <table>
-      <tr>
-        <th>Sr.No</th>
-        <th>Name</th>
-        <th>Email-Id</th>
-        <th>Amount</th>
-      </tr>
-
-      <tr>
-        <td>1</td>
-        <td>Jinendra</td>
-        <td>Jinendra@gmail.com</td>
-        <td>
-          <p id="JinendraBankBalance">23600</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td>2</td>
-        <td>Medha</td>
-        <td>Medha@gmail.com</td>
-        <td>
-          <p id="MedhaBankBalance">37000</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td>3</td>
-        <td>Rajesh</td>
-        <td>Rajesh@gmail.com</td>
-        <td>
-          <p id="RajeshBankBalance">59700</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td>4</td>
-        <td>Yash</td>
-        <td>Yash@gmail.com</td>
-        <td>
-          <p id="YashBankBalance">27000</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td>5</td>
-        <td>Aparna</td>
-        <td>Aparna@gmail.com</td>
-        <td>
-          <p id="AparnaBankBalance">31800</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td>6</td>
-        <td>Asmita</td>
-        <td>Asmita@gmail.com</td>
-        <td>
-          <p id="AsmitaBankBalance">26500</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td>7</td>
-        <td>Aman</td>
-        <td>Aman@gmail.com</td>
-        <td>
-          <p id="AmanBankBalance">35900</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td>8</td>
-        <td>Ashish</td>
-        <td>Ashish@gmail.com</td>
-        <td>
-          <p id="AshishBankBalance">32450</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td>9</td>
-        <td>Kedar</td>
-        <td>Kedar@gmail.com</td>
-        <td>
-          <p id="KedarBankBalance">23500</p>
-        </td>
-      </tr>
-
-      <tr>
-        <td>10</td>
-        <td>Omkar</td>
-        <td>Omkar@gmail.com</td>
-        <td>
-          <p id="OmkarBankBalance">35850</p>
-        </td>
-      </tr>
-
-    </table>
-  </div>
-
-  </section>
-
-  <div class="button">
-
-    <button class="btn btn-outline-info btn-lg my-btn" data-toggle="modal" data-target="#sendMoney">Send Money</button>
-    <a class="btn btn-outline-info btn-lg my-btn" href="history.html" data-toggle="modal" data-target="#transactionHistory">See All Transactions</a>
-  </div>
+  
 
   <script src="script.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
