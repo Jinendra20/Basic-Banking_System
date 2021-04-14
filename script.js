@@ -14,11 +14,11 @@ function sendMoney() {
      document.getElementById(findSenderBankAccount).innerHTML = myAccountBalance;
      document.getElementById(findUserBankAccount).innerHTML = finalAmount;
      alert(`Successful Transaction !!
-        $${enterAmount} is sent to ${enterName}@gmail.com.`)
+        ₹${enterAmount} is sent to ${enterName}@gmail.com.`)
  
      // transaction history
      var createPTag = document.createElement("li");
-     var textNode = document.createTextNode(`Rs ${enterAmount} is sent from the sender with Email-id ${enterSName}@gmail.com
+     var textNode = document.createTextNode(`Rs. ₹${enterAmount} is sent from the sender with Email-id ${enterSName}@gmail.com
    to recepient with Email-id ${enterName}@gmail.com on ${Date()}.`);
      createPTag.appendChild(textNode);
      var element = document.getElementById("transaction-history-body");
